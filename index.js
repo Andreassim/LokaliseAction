@@ -1,6 +1,6 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
-const LokaliseApi = require("@lokalise/node-api");
+import { core } from "@actions/core"
+import { github } from "@actions/github"
+import { LokaliseApi } from "@lokalise/node-api";
 
 try {
   const API_KEY = core.getInput('API_KEY');

@@ -10,4 +10,4 @@ outputs:
     description: 'display wether it when good or not'
 runs:
   using: 'node20'
-  main: 'index.js'
+  main: 'dist/index.js'
