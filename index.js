@@ -1,5 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
+const LokaliseApi = require("@lokalise/node-api");
 
 try {
   const API_KEY = core.getInput('API_KEY');
@@ -16,7 +17,7 @@ try {
     }
     )
   core.setOutput("result", "success");
-  
+
 } catch (error) {
   core.setFailed(error.message);
 }
