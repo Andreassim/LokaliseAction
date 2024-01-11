@@ -2,9 +2,11 @@ name: 'Lokalise trigger PR  '
 description: 'Triggers build on Lokalise that creates a PR '
 inputs:
   API_KEY:  # Lokalise API key
-    description: 'Who to greet'
+    description: 'API KEY'
     required: true
   PROJECT_KEY: #Lokalise Projekt key 
+    description: "Project key"
+    required: true
 outputs:
   result: # id of output
     description: 'display wether it when good or not'
