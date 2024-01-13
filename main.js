@@ -5,8 +5,8 @@ import { core } from "@actions/core"
 export async function run(){
     try {
         console.log("Getting keys");
-        const API_KEY = core.getInput('API_KEY');
-        const PROJECT_KEY = core.getInput('PROJECT_KEY');
+        const API_KEY = core.getInput('LOKALISE_API_KEY');
+        const PROJECT_KEY = core.getInput('LOKALISE_PROJECT_KEY');
         
         /*console.log("Setting up lokaliseAPI");
         const lokaliseApi = new LokaliseApi({ apiKey: API_KEY});

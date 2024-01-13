@@ -26460,8 +26460,8 @@ var core = __nccwpck_require__(6150);
 async function run(){
     try {
         console.log("Getting keys");
-        const API_KEY = core.core.getInput('API_KEY');
-        const PROJECT_KEY = core.core.getInput('PROJECT_KEY');
+        const API_KEY = core.core.getInput('LOKALISE_API_KEY');
+        const PROJECT_KEY = core.core.getInput('LOKALISE_PROJECT_KEY');
         
         /*console.log("Setting up lokaliseAPI");
         const lokaliseApi = new LokaliseApi({ apiKey: API_KEY});
