@@ -1,8 +1,8 @@
-import { core } from "@actions/core"
+const core = require("@actions/core")
 //import { LokaliseApi } from "@lokalise/node-api";
 
 
-export async function run(){
+async function run(){
     try {
         console.log("Getting keys");
         const API_KEY = core.getInput('LOKALISE_API_KEY');
@@ -29,3 +29,6 @@ export async function run(){
     }
 }
 
+module.exports = {
+    run
+}
