@@ -29,7 +29,4 @@ async function run(){
     }
 }
 
-module.exports = {
-    run
-}
-
+export default run;
