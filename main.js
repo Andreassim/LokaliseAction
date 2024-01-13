@@ -7,7 +7,11 @@ async function run(){
         console.log("Getting keys");
         const API_KEY = core.getInput('LOKALISE_API_KEY');
         const PROJECT_KEY = core.getInput('LOKALISE_PROJECT_KEY');
-        
+
+        if(!(API_KEY && PROJECT_KEY)){
+            throw new Error("Missing API_KEY or PROJECT KEY")
+        }
+
         console.log("Setting up lokaliseAPI");
         const lokAPI = new LokaliseApi({ apiKey: API_KEY });
         console.log("Download Translations");
