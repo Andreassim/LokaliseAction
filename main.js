@@ -1,5 +1,5 @@
 const core = require("@actions/core")
-const LokaliseApi = require("@lokalise/node-api")
+const { LokaliseApi } = require("@lokalise/node-api")
 //import { LokaliseApi } from "@lokalise/node-api";
 
 async function run(){

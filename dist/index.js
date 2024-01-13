@@ -5,7 +5,7 @@
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 const core = __nccwpck_require__(6150)
-const LokaliseApi = __nccwpck_require__(9671)
+const { LokaliseApi } = __nccwpck_require__(9671)
 //import { LokaliseApi } from "@lokalise/node-api";
 
 async function run(){
@@ -26638,7 +26638,7 @@ class LokalisePkg {
     static async getVersion() {
         let pkg;
         try {
-            pkg = JSON.parse((await (0,promises_namespaceObject.readFile)(new URL(LokalisePkg.pkgPath(), import.meta.url))).toString());
+            //pkg = JSON.parse((await (0,promises_namespaceObject.readFile)(new URL(LokalisePkg.pkgPath(), import.meta.url))).toString());
         }
         catch (_e) {
             pkg = null;
