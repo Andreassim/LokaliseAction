@@ -1,7 +1,6 @@
 const core = require("@actions/core")
 //import { LokaliseApi } from "@lokalise/node-api";
 
-
 async function run(){
     try {
         console.log("Getting keys");
