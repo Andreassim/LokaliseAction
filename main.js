@@ -1,5 +1,5 @@
 import { core } from "@actions/core"
-import { LokaliseApi } from "@lokalise/node-api";
+//import { LokaliseApi } from "@lokalise/node-api";
 
 
 export async function run(){
@@ -8,7 +8,7 @@ export async function run(){
         const API_KEY = core.getInput('API_KEY');
         const PROJECT_KEY = core.getInput('PROJECT_KEY');
         
-        console.log("Setting up lokaliseAPI");
+        /*console.log("Setting up lokaliseAPI");
         const lokaliseApi = new LokaliseApi({ apiKey: API_KEY});
         console.log("Download Translations");
         const downloads = await lokaliseApi.files().download(
@@ -20,7 +20,7 @@ export async function run(){
                 triggers: ['github']
             }
         );
-        
+        */
         console.log("success");
         core.setOutput("result", "success");
             
